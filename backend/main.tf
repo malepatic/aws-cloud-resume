@@ -65,6 +65,7 @@ resource "aws_api_gateway_integration" "integration" {
   resource_id = aws_api_gateway_resource.resource.id
   http_method = aws_api_gateway_method.method.http_method
   type        = "AWS_PROXY"
+  integration_http_method = "POST"
   uri         = aws_lambda_function.lambda.invoke_arn
 }
 
@@ -74,4 +75,19 @@ resource "aws_lambda_permission" "api_gateway" {
   function_name = aws_lambda_function.lambda.function_name
   principal     = "apigateway.amazonaws.com"
   source_arn    = "${aws_api_gateway_rest_api.api.execution_arn}/*/*"
+}
+
+resource "aws_dynamodb_table" "visitor_counter" {
+  name           = "visitorCounter"
+  billing_mode   = "PAY_PER_REQUEST"
+  hash_key       = "id"
+
+  attribute {
+    name = "id"
+    type = "S"
+  }
+
+  tags = {
+    Name = "VisitorCounterTable"
+  }
 }

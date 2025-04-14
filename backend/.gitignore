@@ -1,0 +1,69 @@
+# ========================================
+# Python
+# ========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.venv.bak/
+env.bak/
+
+# Test cache
+.pytest_cache/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDEs/editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and debugging
+*.log
+*.cover
+coverage.*
+.cache/
+*.db
+*.sqlite3
+
+# dotenv files
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ========================================
+# Terraform
+# ========================================
+
+# Terraform working directory
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Sensitive variable files (you may use .tfvars to store secrets)
+terraform.tfvars
+*.tfvars
+
+# Terraform plans
+*.tfplan
+
+# Terraform lock file (optional to ignore)
+.terraform.lock.hcl

@@ -134,3 +134,21 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Terraform working directory
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Sensitive variable files (you may use .tfvars to store secrets)
+terraform.tfvars
+*.tfvars
+
+# Terraform plans
+*.tfplan
+
+# Terraform lock file (optional to ignore)
+.terraform.lock.hcl

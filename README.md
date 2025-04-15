@@ -1,7 +1,6 @@
 
 # The Cloud Resume Challenge - AWS
 
-Welcome to the **Cloud Resume Challenge - AWS**! This challenge is designed to guide you through creating an interactive resume hosted on AWS, incorporating a variety of cloud technologies and best practices.
 
 ## Project Overview
 
@@ -9,8 +8,6 @@ The challenge consists of creating a static resume webpage with the following fe
 
 1. **Certification**
    - Your resume needs to have the **AWS Cloud Practitioner** certification.
-   - If you have a more advanced AWS cert, that's fine, but not required.
-   - The certification exam can be taken online for $100 USD.
 
 2. **HTML**
    - Your resume should be written in **HTML**, not a Word document or PDF.
@@ -65,6 +62,3 @@ The challenge consists of creating a static resume webpage with the following fe
 
 ---
 
-For more detailed strategies, tools, and further challenges to help you get hired in the cloud, check out the **AWS edition of the Cloud Resume Challenge Guidebook**.
-
-Good luck, and happy building!
